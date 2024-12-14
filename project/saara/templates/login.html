@@ -9,6 +9,15 @@
     <form action=""></form>
     <input type="text">
     <label for=""></label>
+    <button type="submit">submit</button>
+
+    <script>
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            var input = document.querySelector('input').value;
+            console.log(input);
+        });
+    </script>
     
 </body>
 </html>
